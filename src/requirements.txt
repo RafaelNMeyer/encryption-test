@@ -1,0 +1,5 @@
+cryptography==2.8
+Flask==1.1.1
+Flask-Cors==3.0.10
+pycrypto==2.6.1
+pycryptodome==3.11.0
