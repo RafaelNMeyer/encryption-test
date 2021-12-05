@@ -9,7 +9,9 @@ Na parte de back-end foi utlizada as bibliotecas Flask, Crypto.cypher - AES e cr
 
 ### Installation
 
-Você pode rodar o programa rodando o código abaixo após instalar o docker na sua máquina!
+Você pode rodar o programa rodando o código abaixo após instalar o "docker" na sua máquina!
+
+Instale o "npm" também! "sudo apt install npm"
 
 No diretório raiz do projeto, acesse a pasta src e rode o seguinte comando:
 
