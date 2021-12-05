@@ -128,14 +128,14 @@ export default function Generate() {
                         <Input id="archive" type="file" onChange={selectFile}></Input>
                         <Button onClick={sendFile}>Encrypt file</Button>
                         {sha256 ?
-                            [<CopyToClipboard text={sha256.trim()}
+                            [<CopyToClipboard key='copy-sha256' text={sha256.trim()}
                                 onCopy={copySha256}>
-                                <Button style={CopiedSha256 ? { color: "red" } : { color: "black" }}>
+                                <Button key='copy-sha256-button' style={CopiedSha256 ? { color: "red" } : { color: "black" }}>
                                     {CopiedSha256 ? 'Copied!' : 'Copy resume'}
                                 </Button>
 
                             </CopyToClipboard>,
-                            <Result>{sha256}</Result>] : null}
+                            <Result key='copy-sha256-result'>{sha256}</Result>] : null}
 
                     </Wrapper> : null}
 
@@ -151,9 +151,9 @@ export default function Generate() {
                         {privateKey ?
                             [<H1 key='private-h1'>Private Key</H1>,
 
-                            <CopyToClipboard text={privateKey.trim()}
+                            <CopyToClipboard key='copy-private' text={privateKey.trim()}
                                 onCopy={copyPrivate}>
-                                <Button style={copiedPrivate ? { color: "red" } : { color: "black" }}>
+                                <Button key='copy-private-button' style={copiedPrivate ? { color: "red" } : { color: "black" }}>
                                     {copiedPrivate ? 'Copied!' : 'Copy Private Key'}
                                 </Button>
 
@@ -165,9 +165,9 @@ export default function Generate() {
 
                         {publicKey ?
                             [<H1 key='public-h1'>Public Key</H1>,
-                            <CopyToClipboard text={publicKey.trim()}
+                            <CopyToClipboard key='copy-public' text={publicKey.trim()}
                                 onCopy={copyPublic}>
-                                <Button style={copiedPublic ? { color: "red" } : { color: "black" }}>
+                                <Button key='copy-public-button' style={copiedPublic ? { color: "red" } : { color: "black" }}>
                                     {copiedPublic ? 'Copied!' : 'Copy Public Key'}
                                 </Button>
 
@@ -189,9 +189,9 @@ export default function Generate() {
 
                         {decoded ?
                             [<H1 key='decoded-h1'>Decoded</H1>,
-                            <CopyToClipboard text={decoded.replace(/[^\x20-\x7E]/g, '').trim()}
+                            <CopyToClipboard key='copy-base64' text={decoded.replace(/[^\x20-\x7E]/g, '').trim()}
                                 onCopy={copyBase64}>
-                                <Button style={CopiedBase64 ? { color: "red" } : { color: "black" }}>
+                                <Button key='copy-base64-button' style={CopiedBase64 ? { color: "red" } : { color: "black" }}>
                                     {CopiedBase64 ? 'Copied!' : 'Copy decrypted'}
                                 </Button>
                             </CopyToClipboard>,

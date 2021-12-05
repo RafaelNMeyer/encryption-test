@@ -67,9 +67,9 @@ def decode():
             data_decoded = base64.b64decode(data) 
 
             decipher = AES.new(password, AES.MODE_ECB)
-            decoded = decipher.decrypt(data_decoded)   
-            
+            decoded = decipher.decrypt(data_decoded)
         return decoded
     return "nice"
 
-    
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')
