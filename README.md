@@ -14,7 +14,7 @@ Você pode rodar o programa rodando o código abaixo após instalar o docker na 
 No diretório raiz do projeto, acesse a pasta src e rode o seguinte comando:
 
 ```bash
-docker-compose up
+sudo docker-compose up
 ```
 
 #### Dificuldades
