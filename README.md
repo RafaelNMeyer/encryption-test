@@ -11,13 +11,20 @@ Na parte de back-end foi utlizada as bibliotecas Flask, Crypto.cypher - AES e cr
 
 Você pode rodar o programa rodando o código abaixo após instalar o "docker" na sua máquina!
 
-Instale o "npm" também! "sudo apt install npm"
+No diretório do projeto: "encryption-test/src/ui/encryption" rode o comando:
+
+```bash
+sudo npm install
+```
+Você deve rodar o comando acima por sua conta pois o docker não foi bem configurado.. ;( 
 
 No diretório raiz do projeto, acesse a pasta src e rode o seguinte comando:
 
 ```bash
 sudo docker-compose up
 ```
+
+Assim o programa irá rodar e funcionará!
 
 #### Dificuldades
 
