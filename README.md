@@ -11,6 +11,8 @@ Na parte de back-end foi utlizada as bibliotecas Flask, Crypto.cypher - AES e cr
 
 Você pode rodar o programa rodando o código abaixo após instalar o docker na sua máquina!
 
+No diretório raiz do projeto, acesse a pasta src e rode o seguinte comando:
+
 ```bash
 docker-compose up
 ```
